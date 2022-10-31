@@ -46,6 +46,7 @@ fi
 
 
 #Run qsiprep_prep
+export SINGULARITYENV_TEMPLATEFLOW_HOME=/GPFS/cuizaixu_lab_permanent/Public_Data/HBN/code/rsfMRI/templateflow
 unset PYTHONPATH; singularity run --cleanenv -B $bids_root_dir_output_wd4singularity/derivatives/qsiprep/$subj:/wd \
     -B $bids_root_dir:/inputbids \
     -B $bids_root_dir_output/derivatives/qsiprep/$subj:/output \
