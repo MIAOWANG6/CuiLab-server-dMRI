@@ -4,7 +4,7 @@
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=8
 #SBATCH --mem-per-cpu 8000
-#SBATCH -p lab_fat
+#SBATCH -p q_cn
 
 module load singularity/3.7.0
 
