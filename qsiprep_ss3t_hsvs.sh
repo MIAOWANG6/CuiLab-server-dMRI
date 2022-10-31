@@ -50,7 +50,7 @@ unset PYTHONPATH; singularity run --cleanenv -B $bids_root_dir_output_wd4singula
     -B $bids_root_dir:/inputbids \
     -B $bids_root_dir_output/derivatives/qsiprep/$subj:/output \
     -B $bids_root_dir_output/derivatives/qsiprep:/recon_input \
-    -B $bids_root_dir_output/derivatives/fastcsr:/freesurfer \
+    -B $bids_root_dir_output/derivatives/fastcsr/sub-001:/freesurfer \
     -B /GPFS/cuizaixu_lab_permanent/wangmiao:/freesurfer_license \
     /GPFS/cuizaixu_lab_permanent/wuguowei/app_packages/qsiprep.sif\
     /inputbids /output \
